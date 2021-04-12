@@ -29,6 +29,7 @@ let jmena = [
 
 let tazenaJmena = [];
 
+// pokud je pole "jména" rovna 0, tak se vrať
 function tahnoutJmeno() {
     if (jmena.length === 0) {
         return;
@@ -43,6 +44,8 @@ function tahnoutJmeno() {
     console.log(vylosovaneJmeno);
 
     // Vyřadíme vylosované jméno z osudí
+    jmena.splice(vylosovanyIndex, 1);
+    console.log(jmena.length)
 
     // Výherní jméno si uložíme do pole k ostatním výherním
 
