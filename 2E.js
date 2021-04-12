@@ -37,25 +37,22 @@ function tahnoutJmeno() {
 
     // Generujeme náhodný index
     let vylosovanyIndex = Math.floor(Math.random() * jmena.length);
-    console.log(vylosovanyIndex);
 
     // Získáme výherní jméno na patřičném indexu
     let vylosovaneJmeno = jmena[vylosovanyIndex];
-    console.log(vylosovaneJmeno);
 
     // Vyřadíme vylosované jméno z osudí
     jmena.splice(vylosovanyIndex, 1);
-    console.log(jmena.length)
 
     // Výherní jméno si uložíme do pole k ostatním výherním
     tazenaJmena.push(vylosovaneJmeno);
 
-        // Vložíme výherní jméno a seznam tažených do HTML
-        let vyherce = document.querySelector("#vylosovany");
-        vyherce.innerHTML = vylosovaneJmeno;
+    // Vložíme výherní jméno a seznam tažených do HTML
+    let vyherce = document.querySelector("#vylosovany");
+    vyherce.innerHTML = vylosovaneJmeno;
 
-        let seznamJmen = document.querySelector("#seznam");
-        seznamJmen.innerHTML = tazenaJmena
+    let seznamJmen = document.querySelector("#seznam");
+    seznamJmen.innerHTML = tazenaJmena
 
 
     
