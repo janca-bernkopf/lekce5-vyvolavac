@@ -48,8 +48,15 @@ function tahnoutJmeno() {
     console.log(jmena.length)
 
     // Výherní jméno si uložíme do pole k ostatním výherním
+    tazenaJmena.push(vylosovaneJmeno);
 
-    let vyherce = document.querySelector("#vylosovany");
-    vyherce.innerHTML = vylosovaneJmeno;
+        // Vložíme výherní jméno a seznam tažených do HTML
+        let vyherce = document.querySelector("#vylosovany");
+        vyherce.innerHTML = vylosovaneJmeno;
+
+        let seznamJmen = document.querySelector("#seznam");
+        seznamJmen.innerHTML = tazenaJmena
+
+
     
 }
